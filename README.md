@@ -2,8 +2,8 @@
 FlowerStore.ph Simple Product Upload By Michael Ryan P. Aquino
 
 ## User Login Credential - Default User:
-email: superadmin2021@gmail.com
-password: super@dm1nPa$$
+# email: superadmin2021@gmail.com
+# password: super@dm1nPa$$
 
 STEP BY STEP TO SETUP THE SIMPLE PRODUCT UPLOAD PROJECT
 1. Make sure that you install the composer. Here's the link: https://getcomposer.org/download/
