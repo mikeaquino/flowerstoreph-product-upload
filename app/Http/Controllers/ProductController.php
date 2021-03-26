@@ -23,7 +23,7 @@ class ProductController extends Controller
 			'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:10240'
 		]);
 
-		$photo = time() . '-' . request()->photo->getClientOriginalName();
+		$photo = url('') . '/images/' . time() . '-' . request()->photo->getClientOriginalName();
 		$product = Product::create([
 			'product_name' => request()->product_name,
 			'description' => request()->description,
