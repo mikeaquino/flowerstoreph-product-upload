@@ -8,13 +8,24 @@
                 <div class="card-header">{{ __('Products') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                    <a href="/add" class="btn btn-success mb-2">Add New</a>
+                    @if (count($product) > 0)
+                        @foreach ($product as $prodList)
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="{{ $prodList->photo }}" alt="Card image">
+                            <div class="card-body">
+                                <p class="card-text"><span class="font-weight-bold">Product Name:</span> {{ $prodList->product_name }}</p>
+                                <p class="card-text"><span class="font-weight-bold">Description: </span>{{ $prodList->description }}</p>
+                                <p class="card-text"><span class="font-weight-bold">Quantity: </span>{{ $prodList->quantity }}</p>
+                                <p class="card-text"><span class="font-weight-bold">Price: </span>{{ $prodList->price }}</p>
+                                <p class="card-text"><span class="font-weight-bold">Uploaded By: </span>{{ $prodList->uploaded_by }}</p>
+                            </div>
                         </div>
+                        <br>
+                        @endforeach
+                    @else
+                        <p>No data found!</p>
                     @endif
-
-                    <a href="/add" class="btn btn-success">Add New</a>
                 </div>
             </div>
         </div>
