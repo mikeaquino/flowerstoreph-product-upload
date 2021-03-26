@@ -22,5 +22,5 @@ STEP BY STEP TO SETUP THE SIMPLE PRODUCT UPLOAD PROJECT
 
 Please let me know if something needs to be changed/updated. If there's also an issue and conflict with my local setup instructions, please let me know so I can work on it immediately.
 
-Command to run migration: php artisan migrate
-Command to run product seeder: php artisan db:seed --class=ProductSeeder
+## Command to run migration: php artisan migrate
+## Command to run product seeder: php artisan db:seed --class=ProductSeeder
